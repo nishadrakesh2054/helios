@@ -1,0 +1,26 @@
+{
+  "short_name": "Helios",
+  "name": "Helios Hospital",
+  "icons": [
+    {
+      "src": "images/logo_icon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "images/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#274760",
+  "background_color": "#ffffff",
+  "description": "Helios Hospital – Excellence in Healthcare and Patient-Centered Services"
+}
