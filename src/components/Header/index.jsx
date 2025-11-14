@@ -70,13 +70,13 @@ export default function Header({ logoSrc, variant }) {
                       </DropDown>
                     </li>
                     <li>
-                      <Link to="/doctors">Find Doctors</Link>
+                      <Link to="/doctors">Our Specialists</Link>
                     </li>
                     <li>
                       <Link to="/departments">Departments</Link>
                     </li>
                     <li>
-                      <Link to="/service">Services</Link>
+                      <Link to="/service">Our Facilities</Link>
                     </li>
                     <li className="menu-item-has-children">
                       <Link to="/">Overview</Link>
