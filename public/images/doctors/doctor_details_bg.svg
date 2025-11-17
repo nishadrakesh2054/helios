@@ -1,9 +1,16 @@
-<svg width="1920" height="489" viewBox="0 0 1920 489" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1920" height="489" fill="url(#paint0_linear_21_4869)"/>
-<defs>
-<linearGradient id="paint0_linear_21_4869" x1="549.5" y1="-15.9142" x2="921.028" y2="803.116" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D2EAEF"/>
-<stop offset="1" stop-color="#86BBF1"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 489">
+  <!-- Generator: Adobe Illustrator 29.3.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 146)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="792" y1="613.4" x2="1163.5" y2="-205.7" gradientTransform="translate(0 487.5) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d2eaef"/>
+      <stop offset="1" stop-color="#34c2d7"/>
+    </linearGradient>
+  </defs>
+  <rect class="st0" y="0" width="1920" height="489"/>
 </svg>

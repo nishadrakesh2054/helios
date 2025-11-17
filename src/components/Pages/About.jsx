@@ -123,17 +123,21 @@ const awardData = [
 const valuesData = [
   {
     id: 1,
-    icon: "/images/home_3/value_icon_2.svg",
-    title: "Vision",
+    icon: "/images/home_3/value_icon_1.svg",
+    title: "Our Vision",
     description:
       "To be the most trusted partner in health, ailment and well-being, all the way.",
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    bgColor: "#667eea",
   },
   {
     id: 2,
     icon: "/images/home_3/value_icon_2.svg",
-    title: "Mission",
+    title: "Our Mission",
     description:
       "Committed to providing quality and patient-centric health care. To transform healthcare through integrated clinical practice, education and training. To become one of the most premium healthcare providers in the region by 2030.",
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    bgColor: "#f5576c",
   },
 ];
 
@@ -149,32 +153,119 @@ export default function About() {
       />
       <Section>
         <div className="container">
-          <div
-            className="py-5"
-            style={{
-              background: "linear-gradient(154deg, #d2eaef 0%, #86bbf1 100%)",
-            }}
-          >
-            <div className="container">
-              <div className="row d-flex gy-4 justify-content-center">
-                {valuesData.map((item) => (
-                  <div className="col-lg-4 d-flex" key={item.id}>
+          <div className="row g-4">
+            {valuesData.map((item) => (
+              <div className="col-lg-6" key={item.id}>
+                <div
+                  className="position-relative"
+                  style={{
+                    background: "#fff",
+                    borderRadius: "20px",
+                    padding: "0",
+                    overflow: "hidden",
+                    boxShadow: "0 5px 30px rgba(0, 0, 0, 0.08)",
+                    transition: "all 0.4s ease",
+                    height: "100%",
+                    minHeight: "280px",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-8px)";
+                    e.currentTarget.style.boxShadow =
+                      "0 10px 40px rgba(0, 0, 0, 0.12)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow =
+                      "0 5px 30px rgba(0, 0, 0, 0.08)";
+                  }}
+                >
+                  {/* Colored accent bar */}
+
+                  <div
+                    className="d-flex align-items-center"
+                    style={{
+                      padding: "2.5rem",
+                      height: "100%",
+                    }}
+                  >
+                    {/* Icon Section */}
                     <div
-                      className="cs_iconbox cs_style_10 cs_radius_20 cs_white_bg text-center p-4 flex-fill"
-                      style={{ minHeight: "350px" }}
+                      style={{
+                        flexShrink: 0,
+                        marginRight: "2rem",
+                      }}
                     >
-                      <div className="cs_iconbox_icon cs_center rounded-circle mb-3">
-                        <img src={item.icon} alt={item.title} />
+                      <div
+                        style={{
+                          width: "90px",
+                          height: "90px",
+                          borderRadius: "18px",
+                          background: "#35C2D7",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          boxShadow: "0 8px 20px rgba(53, 194, 215, 0.35)",
+                          transition: "all 0.4s ease",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.transform =
+                            "scale(1.1) rotate(5deg)";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.transform =
+                            "scale(1) rotate(0deg)";
+                        }}
+                      >
+                        <img
+                          src={item.icon}
+                          alt={item.title}
+                          style={{
+                            width: "45px",
+                            height: "45px",
+                            filter: "brightness(0) invert(1)",
+                          }}
+                        />
                       </div>
-                      <h2 className="cs_iconbox_title">{item.title}</h2>
-                      <p className="cs_iconbox_subtitle mb-0">
+                    </div>
+
+                    {/* Content Section */}
+                    <div style={{ flex: 1 }}>
+                      <h3
+                        style={{
+                          fontSize: "clamp(18px, 2.5vw, 22px)",
+                          fontWeight: "700",
+                          color: "#1a1a1a",
+                          marginBottom: "12px",
+                          lineHeight: "1.3",
+                        }}
+                      >
+                        {item.title}
+                      </h3>
+                      <p
+                        style={{
+                          fontSize: "clamp(14px, 2vw, 16px)",
+                          lineHeight: "1.7",
+                          color: "#666",
+                          margin: 0,
+                        }}
+                      >
                         {item.description}
                       </p>
                     </div>
                   </div>
-                ))}
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      height: "5px",
+                      background: "#35C2D7",
+                    }}
+                  />
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </Section>

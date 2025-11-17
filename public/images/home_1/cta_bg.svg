@@ -1,32 +1,54 @@
-<svg width="1673" height="450" viewBox="0 0 1673 450" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1673" height="450" fill="url(#paint0_linear_26_107)"/>
-<mask id="mask0_26_107" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1673" height="450">
-<rect width="1673" height="450" fill="url(#paint1_linear_26_107)"/>
-</mask>
-<g mask="url(#mask0_26_107)">
-<g opacity="0.17" filter="url(#filter0_d_26_107)">
-<path d="M1358.06 -21.8305C1207.88 -37.2942 1185.33 90.1796 1192.97 156.449C1212.38 262.278 1324.95 326.157 1369.62 348.748C1405.35 366.822 1483.08 440.738 1517.48 475.437C1653.56 558.745 1700.07 402.397 1709.42 375.07C1718.78 347.743 1725.69 250.066 1781.03 175.942C1825.31 116.642 1847.19 52.3811 1852.59 27.6629C1864 -83.3307 1808.03 -102.716 1783.61 -110.744C1759.2 -118.772 1704.6 -115.149 1611.96 -39.8607C1537.84 20.37 1411.91 -2.34451 1358.06 -21.8305Z" fill="white"/>
-</g>
-<path opacity="0.2" d="M0 0H1518.5L695.5 450H0V0Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_d_26_107" x="1152.67" y="-148.712" width="740.43" height="691.346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="19.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.52549 0 0 0 0 0.733333 0 0 0 0 0.945098 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_107"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_107" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_26_107" x1="0" y1="0" x2="1669.6" y2="296.745" gradientUnits="userSpaceOnUse">
-<stop stop-color="#86BBF1"/>
-<stop offset="1" stop-color="#D2EAEF"/>
-</linearGradient>
-<linearGradient id="paint1_linear_26_107" x1="0" y1="0" x2="1669.6" y2="296.745" gradientUnits="userSpaceOnUse">
-<stop stop-color="#86BBF1"/>
-<stop offset="1" stop-color="#D2EAEF"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1673 450">
+  <!-- Generator: Adobe Illustrator 29.3.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 146)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        mask: url(#mask);
+      }
+
+      .st3 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st4 {
+        opacity: .2;
+      }
+
+      .st1 {
+        isolation: isolate;
+        opacity: .2;
+      }
+
+      .st5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-13.2" y1="375.5" x2="1656.4" y2="78.7" gradientTransform="translate(0 449.5) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34c2d7"/>
+      <stop offset="1" stop-color="#d2eaef"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="-13.2" y1="375.5" x2="1656.4" y2="78.7" gradientTransform="translate(0 449.5) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#86bbf1"/>
+      <stop offset="1" stop-color="#d2eaef"/>
+    </linearGradient>
+    <mask id="mask" x="0" y="-113.7" width="1854.1" height="613.3" maskUnits="userSpaceOnUse">
+      <g id="mask0_26_107">
+        <rect class="st3" y="0" width="1673" height="450"/>
+      </g>
+    </mask>
+  </defs>
+  <rect class="st5" y="0" width="1673" height="450"/>
+  <g class="st2">
+    <g>
+      <g class="st4">
+        <path class="st0" d="M1358.1-21.8c-150.2-15.5-172.7,112-165.1,178.3,19.4,105.8,132,169.7,176.7,192.3,35.7,18.1,113.5,92,147.9,126.7,136.1,83.3,182.6-73,191.9-100.4,9.4-27.3,16.3-125,71.6-199.1,44.3-59.3,66.2-123.6,71.6-148.3,11.4-111-44.6-130.4-69-138.4-24.4-8-79-4.4-171.7,70.9-74.1,60.2-200,37.5-253.9,18Z"/>
+      </g>
+      <path class="st1" d="M0,0h1518.5l-823,450H0V0Z"/>
+    </g>
+  </g>
 </svg>

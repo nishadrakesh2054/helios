@@ -53,96 +53,96 @@
   }
 }
 .cs_fs_94 {
-  font-size: 94px;
+  font-size: 70px;
   line-height: 1.1em;
   @media (max-width: 1700px) {
-    font-size: 72px;
+    font-size: 54px;
   }
   @media (max-width: 1199px) {
-    font-size: 60px;
+    font-size: 45px;
   }
   @media (max-width: 400px) {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 .cs_fs_84 {
-  font-size: 84px;
+  font-size: 63px;
   line-height: 1.12em;
   @media (max-width: 1700px) {
-    font-size: 68px;
+    font-size: 51px;
   }
   @media (max-width: 767px) {
-    font-size: 56px;
+    font-size: 42px;
   }
   @media (max-width: 400px) {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 .cs_fs_72 {
-  font-size: 72px;
+  font-size: 54px;
   line-height: 1.14em;
   @media (max-width: 1700px) {
-    font-size: 56px;
+    font-size: 42px;
   }
   @media (max-width: 991px) {
-    font-size: 50px;
+    font-size: 38px;
   }
   @media (max-width: 575px) {
-    font-size: 48px;
+    font-size: 36px;
   }
   @media (max-width: 350px) {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 .cs_fs_48 {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.04em;
   @media (max-width: 1700px) {
-    font-size: 36px;
-  }
-  @media (max-width: 991px) {
-    font-size: 26px;
-  }
-}
-.cs_fs_40 {
-  font-size: 40px;
-  line-height: 1.25em;
-  @media (max-width: 1700px) {
-    font-size: 32px;
-  }
-  @media (max-width: 991px) {
     font-size: 28px;
   }
-}
-.cs_fs_32 {
-  font-size: 32px;
-  line-height: 1.31em;
-  @media (max-width: 1700px) {
-    font-size: 26px;
-  }
   @media (max-width: 991px) {
-    font-size: 24px;
-  }
-  @media (max-width: 350px) {
-    font-size: 21px;
-  }
-}
-.cs_fs_24 {
-  font-size: 24px;
-  line-height: 1.41em;
-  @media (max-width: 1700px) {
     font-size: 22px;
   }
 }
-.cs_fs_20 {
-  font-size: 20px;
-  line-height: 1.5em;
+.cs_fs_40 {
+  font-size: 30px;
+  line-height: 1.25em;
+  @media (max-width: 1700px) {
+    font-size: 24px;
+  }
+  @media (max-width: 991px) {
+    font-size: 22px;
+  }
+}
+.cs_fs_32 {
+  font-size: 24px;
+  line-height: 1.31em;
+  @media (max-width: 1700px) {
+    font-size: 16px;
+  }
   @media (max-width: 991px) {
     font-size: 18px;
   }
+  @media (max-width: 350px) {
+    font-size: 16px;
+  }
+}
+.cs_fs_24 {
+  font-size: 18px;
+  line-height: 1.41em;
+  @media (max-width: 1700px) {
+    font-size: 17px;
+  }
+}
+.cs_fs_20 {
+  font-size: 16px;
+  line-height: 1.5em;
+  @media (max-width: 991px) {
+    font-size: 15px;
+  }
 }
 .cs_fs_18 {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5em;
 }
 
@@ -311,7 +311,7 @@ hr {
 }
 .cs_btn.cs_style_1 {
   border-radius: 24px;
-  box-shadow: 0px 4px 20px 0px rgba(39, 71, 96, 0.17);
+  //   box-shadow: 0px 4px 20px 0px rgba(39, 71, 96, 0.17);
   font-weight: 500;
   color: #fff;
   display: inline-flex;
@@ -365,10 +365,10 @@ hr {
     transition: all 0.4s ease-in-out;
   }
   &::before {
-    background-image: linear-gradient(134deg, #307bc4 0%, #274760 100%);
+    background-image: linear-gradient(134deg, #35c2d7 0%, #1a7a8a 100%);
   }
   &::after {
-    background-image: linear-gradient(270deg, #307bc4 0%, #274760 100%);
+    background-image: linear-gradient(270deg, #35c2d7 0%, #1a7a8a 100%);
     opacity: 0;
   }
   &:hover {
@@ -471,6 +471,39 @@ hr {
     border-radius: 15px;
   }
 }
+.cs_select_wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  .cs_select_field {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: none;
+  }
+  .cs_select_arrow {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $accent;
+    pointer-events: none;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    @media (max-width: 1700px) {
+      right: 20px;
+    }
+  }
+  &:hover .cs_select_arrow {
+    color: $accent;
+  }
+  .cs_select_field:focus + .cs_select_arrow {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
 .cs_form_field_2 {
   width: 100%;
   display: block;
@@ -508,17 +541,26 @@ input::-ms-input-placeholder,
 }
 .cs_with_icon_input {
   position: relative;
+  .react-datepicker-wrapper {
+    width: 100%;
+    .react-datepicker__input-container {
+      input {
+        width: 100%;
+      }
+    }
+  }
   i {
     position: absolute;
-    top: 30px;
+    top: 50%;
     right: 30px;
+    transform: translateY(-50%);
     color: $accent;
-    font-size: 20px;
+    font-size: 16px;
     pointer-events: none;
     display: flex;
+    z-index: 1;
     @media (max-width: 1700px) {
-      top: 20px;
-      left: 20px;
+      right: 20px;
     }
   }
 }
@@ -2004,7 +2046,7 @@ input::-ms-input-placeholder,
   }
   .cs_form_field {
     border-color: #636363;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5em;
     padding: 19px 25px;
     border-radius: 7px;
@@ -2166,7 +2208,7 @@ input::-ms-input-placeholder,
       position: absolute;
       width: 27px;
       height: 22px;
-      background-image: url(../../../public/images/icons/reply.svg);
+      //   background-image: url(/images/icons/reply.svg);
       left: 0;
       background-size: contain;
       background-position: center;

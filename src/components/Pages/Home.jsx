@@ -123,7 +123,7 @@ export default function Home() {
         subTitle="Delivering trusted medical care with compassion, advanced technology, and expert professionals dedicated to your well-being."
         bgUrl="/images/home_1/bg-2.png"
         imgUrl="/images/home_1/hero_img.png"
-        videoBtnText="See how we work"
+        videoBtnText="See Why Patients Trust Us"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         infoList={[
           {
@@ -214,7 +214,7 @@ export default function Home() {
         <AppointmentSection
           sectionTitle="Appointment"
           sectionTitleUp="BOOK AN"
-          imgUrl="/images/home_1/appointment.jpeg"
+          imgUrl="/images/home_1/appointment.png"
         />
       </Section>
       {/* End Appointment Section */}

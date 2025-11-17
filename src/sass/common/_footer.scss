@@ -77,6 +77,7 @@
     position: absolute;
     top: 50%;
     right: 15px;
+
     transform: translateY(-50%);
     @media (max-width: 1700px) {
       right: 5px;
@@ -131,7 +132,7 @@
 .cs_newsletter.cs_style_3 {
   border-radius: 20px;
   background: linear-gradient(154deg, #d2eaef 0%, #86bbf1 100%);
-  box-shadow: 6px 4px 70px 8px rgba(48, 123, 196, 0.09);
+//   box-shadow: 6px 4px 70px 8px rgba(48, 123, 196, 0.09);
   position: relative;
   z-index: 2;
   margin-top: 240px;

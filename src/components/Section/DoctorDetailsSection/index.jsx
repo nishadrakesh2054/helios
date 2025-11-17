@@ -1,10 +1,10 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
-import { Link } from 'react-router-dom';
-import List from '../../List';
-import ListStyle3 from '../../List/ListStyle3';
-import ListStyle2 from '../../List/ListStyle2';
-import Spacing from '../../Spacing';
+import { Icon } from "@iconify/react";
+import React from "react";
+import { Link } from "react-router-dom";
+import List from "../../List";
+import ListStyle3 from "../../List/ListStyle3";
+import ListStyle2 from "../../List/ListStyle2";
+import Spacing from "../../Spacing";
 
 export default function DoctorDetailsSection({
   bgUrl,
@@ -39,7 +39,10 @@ export default function DoctorDetailsSection({
           <div className="col-lg-5">
             <div className="cs_single_doctor overflow-hidden cs_radius_20">
               <img src={imgUrl} alt="Doctor" className="w-100" />
-              <h3 className="cs_white_color cs_accent_bg mb-0 text-center cs_semibold cs_fs_24">
+              <h3
+                className="cs_white_color mb-0 text-center cs_semibold cs_fs_24"
+                style={{ background: "#35C2D7" }}
+              >
                 {department}
               </h3>
             </div>
@@ -63,7 +66,10 @@ export default function DoctorDetailsSection({
             <h3 className="cs_semibold cs_fs_24 mb-0">{designation}</h3>
             <Spacing md="32" />
             <p className="mb-0 cs_heading_color">{description}</p>
-            <div className="cs_social_links cs_accent_bg cs_radius_15">
+            <div
+              className="cs_social_links cs_radius_15"
+              style={{ background: "#35C2D7" }}
+            >
               {social?.map((item, index) => (
                 <Link to={item.href} key={index}>
                   <Icon icon={item.icon} />

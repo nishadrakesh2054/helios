@@ -367,6 +367,7 @@
           position: relative;
           height: inherit;
           align-items: center;
+          font-size: 17px;
         }
 
         > ul {
@@ -386,7 +387,7 @@
           > a {
             position: relative;
             &::after {
-              content: '';
+              content: "";
               display: inline-block;
               height: 6px;
               width: 6px;
@@ -473,7 +474,7 @@
         padding: 10px 0;
 
         > a {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 600;
           pointer-events: none;
           &:hover {
@@ -577,7 +578,7 @@
       line-height: 1.2em;
       &:before,
       &:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         left: 50%;
@@ -642,7 +643,7 @@
       }
       > li {
         > a {
-          font-size: 18px;
+          font-size: 20px;
           line-height: 1.4em;
         }
       }
@@ -682,7 +683,7 @@
       transition-delay: 0.2s;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         margin-top: -9px;
         transition-property: margin, transform;
@@ -691,7 +692,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         margin-top: 9px;
         transition-property: margin, transform;

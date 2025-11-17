@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function ContactForm() {
   return (
@@ -38,7 +38,7 @@ export default function ContactForm() {
             rows={10}
             className="cs_form_field"
             placeholder="Write something..."
-            defaultValue={''}
+            defaultValue={""}
           />
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
