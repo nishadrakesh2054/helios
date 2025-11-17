@@ -6,7 +6,6 @@ export default function Team({
   imgUrl,
   name,
   designation,
-
   social,
 }) {
   return (
@@ -20,7 +19,6 @@ export default function Team({
           <p className="cs_member_designation cs_fs_10 cs_heading_color">
             {designation}
           </p>
-          {/* <p className="cs_member_description">{description}</p> */}
         </div>
         <div>
           <div className="cs_social_links">
@@ -35,3 +33,4 @@ export default function Team({
     </div>
   );
 }
+
