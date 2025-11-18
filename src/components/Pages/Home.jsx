@@ -185,12 +185,12 @@ export default function Home() {
           {
             title: "Email",
             subTitle: "info@heliosnepal.com",
-            iconUrl: "/images/icons/ambulance.svg",
+            iconUrl: "/images/contact/ambulance.svg",
           },
           {
             title: "Location",
             subTitle: " Jawalakhel-4, Lalitpur",
-            iconUrl: "/images/icons/pin.svg",
+            iconUrl: "/images/contact/pin.svg",
           },
         ]}
         btnText="Make an Appointment"
