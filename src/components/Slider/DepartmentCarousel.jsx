@@ -18,7 +18,7 @@ export default function DepartmentCarousel({ data }) {
       aria-hidden="true"
       aria-disabled={currentSlide === 0 && !canInfinite ? true : false}
     >
-      <img src="/images/icons/left_arrow_blue.svg" alt="Icon" />
+      <img src="/images/contact/left_arrow_blue.svg" alt="Icon" />
     </div>
   );
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
@@ -35,7 +35,7 @@ export default function DepartmentCarousel({ data }) {
         currentSlide === slideCount - 1 && !canInfinite ? true : false
       }
     >
-      <img src="/images/icons/right_arrow_blue.svg" alt="Icon" />
+      <img src="/images/contact/right_arrow_blue.svg" alt="Icon" />
     </div>
   );
   const settings = {

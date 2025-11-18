@@ -200,7 +200,7 @@ export default function Home() {
       <Section topMd={150} topLg={120} topXl={100}>
         <AboutSection
           imgUrl="/images/home_1/about.png"
-          spiningImgUrl="/images/home_1/about_mini.svg"
+          spiningImgUrl="/images/contact/about_mini.svg"
           title="About Us"
           subTitle=" HELIOS HOSPITAL"
           featureList={[
