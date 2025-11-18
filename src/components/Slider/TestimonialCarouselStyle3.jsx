@@ -30,10 +30,10 @@ export default function TestimonialCarouselStyle3({ data }) {
           className="cs_slider_prev cs_center cs_shadow_2"
           onClick={previous}
         >
-          <img src="/images/icons/left_arrow_blue.svg" alt="Prev" />
+          <img src="/images/contact/left_arrow_blue.svg" alt="Prev" />
         </div>
         <div className="cs_slider_next cs_center cs_shadow_2" onClick={next}>
-          <img src="/images/icons/right_arrow_blue.svg" alt="Next" />
+          <img src="/images/contact/right_arrow_blue.svg" alt="Next" />
         </div>
       </div>
       <div className="cs_height_140 cs_height_lg_60" />

@@ -42,8 +42,8 @@ export default function Hero({
               <Link to={btnUrl} className="cs_btn cs_style_1">
                 <span>{btnText}</span>
                 <i>
-                  <img src="/images/icons/arrow_whites.png" alt="Icon" />
-                  <img src="/images/icons/arrow_whites.png" alt="Icon" />
+                  <img src="/images/contact/arrow_white.svg" alt="Icon" />
+                  <img src="/images/contact/arrow_white.svg" alt="Icon" />
                 </i>
               </Link>
             </div>
