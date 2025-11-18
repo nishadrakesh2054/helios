@@ -14,7 +14,7 @@ export default function TeamSlider({ data }) {
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
     >
-      <img src="/images/icons/left_arrow_blue.svg" alt="Icon" />
+      <img src="/images/contact/left_arrow_blue.svg" alt="Icon" />
     </div>
   );
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
@@ -27,7 +27,7 @@ export default function TeamSlider({ data }) {
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
     >
-      <img src="/images/icons/right_arrow_blue.svg" alt="Next" />
+      <img src="/images/contact/right_arrow_blue.svg" alt="Next" />
     </div>
   );
   const settings = {

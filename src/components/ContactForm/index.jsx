@@ -47,8 +47,8 @@ export default function ContactForm() {
           <button className="cs_btn cs_style_1">
             <span>Submit</span>
             <i>
-              <img src="/images/icons/arrow_white.svg" alt="Icon" />
-              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+              <img src="/images/contact/arrow_white.svg" alt="Icon" />
+              <img src="/images/contact/arrow_white.svg" alt="Icon" />
             </i>
           </button>
         </div>
