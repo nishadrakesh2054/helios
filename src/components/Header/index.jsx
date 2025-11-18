@@ -167,7 +167,7 @@ export default function Header({ logoSrc, variant }) {
             type="button"
             onClick={() => setSideNav(!sideNav)}
           >
-            <img src="/images/icons/close.svg" alt="Close" />
+            <img src="/images/contact/close.svg" alt="Close" />
           </button>
           <div className="cs_logo_box">
             {/* <img src="/images/logo.svg" alt="Logo" /> */}

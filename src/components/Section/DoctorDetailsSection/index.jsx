@@ -49,13 +49,13 @@ export default function DoctorDetailsSection({
             <Spacing md="94" lg="60" />
             <ListStyle2
               heading={contactInfoHeading}
-              iconUrl="/images/icons/schedule.svg"
+              iconUrl="/images/contact/schedule.svg"
               data={contactInfo}
             />
             <Spacing md="66" lg="60" />
             <ListStyle3
               heading={scheduleHeading}
-              iconUrl="/images/icons/schedule.svg"
+              iconUrl="/images/contact/schedule.svg"
               data={schedules}
             />
           </div>
@@ -80,19 +80,19 @@ export default function DoctorDetailsSection({
             <Spacing md="35" lg="0" />
             <List
               heading={degreesHeading}
-              iconUrl="/images/icons/graduation.svg"
+              iconUrl="/images/contact/graduation.svg"
               data={degrees}
             />
             <Spacing md="70" lg="50" />
             <List
               heading={experiencesHeading}
-              iconUrl="/images/icons/experience.svg"
+              iconUrl="/images/contact/experience.svg"
               data={experiences}
             />
             <Spacing md="70" lg="50" />
             <List
               heading={awardHeading}
-              iconUrl="/images/icons/award2.svg"
+              iconUrl="/images/contact/award2.svg"
               data={awards}
             />
           </div>

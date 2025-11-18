@@ -28,9 +28,9 @@ export default function DoctorDetails() {
             { icon: "fa6-brands:twitter", href: "/about" },
           ]}
           contactInfo={[
-            { iconUrl: "/images/icons/call.svg", title: "+977-9812345678" },
+            { iconUrl: "/images/contact/call.svg", title: "+977-9812345678" },
             {
-              iconUrl: "/images/icons/envlope.svg",
+              iconUrl: "/images/contact/envlope.svg",
               title: "anjali.rana@nepalhealth.com",
             },
           ]}

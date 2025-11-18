@@ -7,7 +7,7 @@ export default function NewsletterStyle5({ title }) {
       <h2 className="cs_newsletter_title">{title}</h2>
       <NewsletterForm
         btnText="Subscribe Newsletter"
-        btnArrowUrl="/images/icons/arrow_white.svg"
+        btnArrowUrl="/images/contact/arrow_white.svg"
       />
     </div>
   );

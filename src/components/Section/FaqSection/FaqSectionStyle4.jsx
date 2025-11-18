@@ -28,7 +28,7 @@ export default function FaqSectionStyle4({
                   className="cs_rotate_animation"
                 />
                 <img
-                  src="/images/icons/tick.svg"
+                  src="/images/contact/tick.svg"
                   alt="Right"
                   className="cs_right_icon"
                 />

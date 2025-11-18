@@ -8,7 +8,7 @@ export default function Newsletter({ title, subTitle }) {
       <div className="cs_newsletter_subTitle">{subTitle}</div>
       <NewsletterForm
         btnText="Submit"
-        btnArrowUrl="/images/icons/arrow_white.svg"
+        btnArrowUrl="/images/contact/arrow_white.svg"
       />
     </div>
   );
