@@ -11,8 +11,14 @@ export default function IconBoxStyle7({ title, subTitle, iconUrl, id }) {
       <h2 className="cs_iconbox_title cs_fs_32">{parser(title)}</h2>
       <p className="cs_iconbox_subtitle m-0">{parser(subTitle)}</p>
       <Link to={`/departments/${id}`} className="cs_iconbox_btn cs_center">
-        <img src="/images/icons/arrow_white.svg" alt="Icon" />
-        <img src="/images/icons/arrow_white.svg" alt="Icon" />
+        <img
+          src={`${process.env.PUBLIC_URL || ""}/images/icons/arrow_white.svg`}
+          alt="Icon"
+        />
+        <img
+          src={`${process.env.PUBLIC_URL || ""}/images/icons/arrow_white.svg`}
+          alt="Icon"
+        />
       </Link>
     </div>
   );
