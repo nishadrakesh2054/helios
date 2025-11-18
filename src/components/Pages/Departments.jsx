@@ -229,10 +229,10 @@ export default function Departments() {
         <div className="container cs_mt_minus_110">
           <div className="row justify-content-end">
             {departmentData?.map((item, index) => (
-              <div className="col-xl-4 col-md-6" key={index}>
+              <div className="col-xl-4 col-md-6 d-flex" key={index}>
                 <Link
                   to={`/departments/${item.id}`}
-                  className="text-decoration-none"
+                  className="text-decoration-none w-100"
                 >
                   <IconBoxStyle7 {...item} />
                 </Link>

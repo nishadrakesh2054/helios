@@ -127,6 +127,20 @@
       gap: 15px;
     }
   }
+  .cs_hero_btn_col {
+    @media (max-width: 991px) {
+      order: -1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 575px) {
+      order: -1;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
   .cs_hero_img {
     position: absolute;
     bottom: -10px;
@@ -278,7 +292,7 @@
       padding-left: 0;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 100vw;
@@ -574,7 +588,7 @@
     .cs_hero_bg {
       height: 100%;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 100%;
         width: 100%;

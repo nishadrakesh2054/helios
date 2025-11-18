@@ -8,6 +8,9 @@ import FaqSection from "../Section/FaqSection";
 import DepartmentSection from "../Section/DepartmentSection";
 import { pageTitle } from "../../helpers/PageTitle";
 import TestimonialSectionStyle4 from "../Section/TestimonialSection/TestimonialSectionStyle4";
+import WhyChooseUsSection from "../Section/WhyChooseUsSection";
+import TeamSection from "../Section/TeamSection";
+import { departmentData } from "./Departments";
 
 const faqData = [
   {
@@ -37,36 +40,84 @@ const faqData = [
   },
 ];
 
-const departmentData = [
+// Use department data from Departments page
+const carouselDepartmentData = departmentData.map((dept) => ({
+  id: dept.id,
+  title: dept.title,
+  iconUrl: dept.iconUrl,
+}));
+
+// Why Choose Us data
+const whyChooseUsData = [
   {
-    title: "Emergency Department",
-    iconUrl: "images/home_1/department_icon_1.svg",
-    href: "/departments/department-details",
+    icon: "fa6-solid:user-doctor",
+    title: "Expert Medical Team",
+    description:
+      "Our highly qualified doctors and medical professionals bring years of experience and expertise to provide the best healthcare services.",
   },
   {
-    title: "Pediatric Departement",
-    iconUrl: "images/home_1/department_icon_2.svg",
-    href: "/departments/department-details",
+    icon: "fa6-solid:flask-vial",
+    title: "Advanced Technology",
+    description:
+      "We utilize state-of-the-art medical equipment and cutting-edge technology to ensure accurate diagnosis and effective treatment.",
   },
   {
-    title: "Gynecology Department",
-    iconUrl: "images/home_1/department_icon_3.svg",
-    href: "/departments/department-details",
+    icon: "fa6-solid:heart-pulse",
+    title: "Patient-Centered Care",
+    description:
+      "Your health and comfort are our top priorities. We provide personalized care tailored to your individual needs and concerns.",
   },
   {
-    title: "Cardiology Department",
-    iconUrl: "images/home_1/department_icon_4.svg",
-    href: "/departments/department-details",
+    icon: "fa6-solid:clock",
+    title: "24/7 Emergency Services",
+    description:
+      "Our emergency department operates round the clock to provide immediate medical attention whenever you need it most.",
   },
   {
-    title: "Neurology Department",
-    iconUrl: "images/home_1/department_icon_5.svg",
-    href: "/departments/department-details",
+    icon: "fa6-solid:shield-heart",
+    title: "Quality & Safety",
+    description:
+      "We maintain the highest standards of medical care, safety protocols, and hygiene to ensure your well-being at all times.",
   },
   {
-    title: "Psychiatry Department",
-    iconUrl: "images/home_1/department_icon_6.svg",
-    href: "/departments/department-details",
+    icon: "fa6-solid:hand-holding-medical",
+    title: "Comprehensive Care",
+    description:
+      "From preventive care to advanced treatments, we offer a full spectrum of healthcare services under one roof.",
+  },
+];
+
+// Team preview data (showing 3 doctors)
+const teamPreviewData = [
+  {
+    imgUrl: "/images/doctors/doctor_1.png",
+    name: "Dr. Suman Shrestha, MD",
+    designation: "Cardiologist",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
+  },
+  {
+    imgUrl: "/images/doctors/doctor_2.png",
+    name: "Dr. Anjali Koirala, MD",
+    designation: "Emergency Medicine Specialist",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
+  },
+  {
+    imgUrl: "/images/doctors/doctor_3.png",
+    name: "Dr. Ramesh Thapa, MD",
+    designation: "Pediatrician",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
   },
 ];
 const testimonialData = [
@@ -127,7 +178,7 @@ export default function Home() {
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         infoList={[
           {
-            title: "Hotline",
+            title: "Call Us Now",
             subTitle: "01- 5912170",
             iconUrl: "/images/contact/icon_1.svg",
           },
@@ -145,11 +196,8 @@ export default function Home() {
         btnText="Make an Appointment"
         btnUrl="/appointments"
       />
-      {/* Start Feature Section */}
 
-      {/* End Feature Section */}
-      {/* Start About Section */}
-      <Section topMd={50}>
+      <Section topMd={150} topLg={120} topXl={100}>
         <AboutSection
           imgUrl="/images/home_1/about.png"
           spiningImgUrl="/images/home_1/about_mini.svg"
@@ -165,24 +213,32 @@ export default function Home() {
           ]}
         />
       </Section>
-      {/* End About Section */}
-      {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={110}>
-        <DepartmentSection
-          sectionTitle="Departments"
-          bgUrl="images/home_1/department_bg.svg"
-          data={departmentData}
+
+      <Section topMd={150} topLg={120} topXl={100}>
+        <WhyChooseUsSection
+          sectionTitle="Why Choose Helios Hospital"
+          sectionTitleUp="OUR ADVANTAGES"
+          data={whyChooseUsData}
         />
       </Section>
 
-      <Section
-        topMd={190}
-        topLg={150}
-        topXl={105}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
+      <Section topMd={150} topLg={120} topXl={100}>
+        <DepartmentSection
+          sectionTitle="Departments"
+          bgUrl="images/home_1/department_bg.svg"
+          data={carouselDepartmentData}
+        />
+      </Section>
+
+      <Section topMd={150} topLg={120} topXl={100}>
+        <TeamSection
+          sectionTitle="Meet Our Experts "
+          sectionTitleUp="OUR TEAM"
+          data={teamPreviewData}
+        />
+      </Section>
+
+      <Section topMd={150} topLg={120} topXl={100}>
         <TestimonialSectionStyle4
           sectionTitle="Discover the Stories of Health and Healing"
           sectionTitleUp="WHAT OUR PATIENTS SAY"
@@ -197,37 +253,32 @@ export default function Home() {
           data={testimonialData}
         />
       </Section>
-      {/* End Testimonial */}
-      {/* Start Banner Section */}
-      <Section>
+
+      <Section topMd={150} topLg={120} topXl={100}>
         <Banner
           bgUrl="images/home_1/cta_bg.svg"
           imgUrl="images/home_1/cta_img.png"
-          title="Don’t Let Your Health Take a Backseat!"
+          title="Don't Let Your Health Take a Backseat!"
           subTitle="Schedule an appointment with one of our experienced medical professionals today!"
         />
       </Section>
-      {/* End Banner Section */}
 
-      {/* Start Appointment Section */}
-      <Section topMd={190} topLg={145} topXl={105} id="appointment">
+      <Section topMd={150} topLg={120} topXl={100} id="appointment">
         <AppointmentSection
           sectionTitle="Appointment"
           sectionTitleUp="BOOK AN"
           imgUrl="/images/home_1/appointment.png"
         />
       </Section>
-      {/* End Appointment Section */}
-      {/* Start FAQ Section */}
-      <Section topMd={190} topLg={145} topXl={105}>
+
+      <Section topMd={150} topLg={120} topXl={100}>
         <FaqSection
           data={faqData}
           sectionTitle="Usually Asked"
           sectionTitleUp="What People"
         />
       </Section>
-      {/* End FAQ Section */}
-      {/* Start Brand Section */}
+
       <Section
         topMd={50}
         topLg={100}
@@ -235,10 +286,7 @@ export default function Home() {
         bottomMd={50}
         bottomLg={100}
         bottomXl={100}
-      >
-        {/* <BrandsSection data={brandData} /> */}
-      </Section>
-      {/* End Brand Section */}
+      ></Section>
     </>
   );
 }

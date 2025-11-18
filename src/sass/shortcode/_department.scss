@@ -36,6 +36,10 @@
     @media (max-width: 400px) {
       padding: 30px 20%;
     }
+    img {
+      filter: brightness(0) saturate(100%) invert(67%) sepia(67%) saturate(1234%) hue-rotate(152deg) brightness(95%) contrast(88%);
+      transition: all 0.3s ease;
+    }
     &:hover {
       transform: translateY(-20px);
       background-color: $accent;
