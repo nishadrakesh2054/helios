@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export const departmentData = [
   {
     id: 1,
-    iconUrl: "images/departments/icon_1.svg",
+    iconUrl: "/images/departments/icon_1.svg",
     title: "Department of Cardiology",
     subTitle: "Comprehensive Heart Care",
     description:
@@ -25,7 +25,7 @@ export const departmentData = [
   },
   {
     id: 2,
-    iconUrl: "images/departments/icon_1.svg",
+    iconUrl: "/images/departments/icon_1.svg",
     title: "Department of Gynecology",
     subTitle: "Women’s Health, Expert Care",
     description:
@@ -42,7 +42,7 @@ export const departmentData = [
 
   {
     id: 3,
-    iconUrl: "images/departments/icon_1.svg",
+    iconUrl: "/images/departments/icon_1.svg",
     title: "Department of Internal Medicine & Endocrinology",
     subTitle: "Holistic Health & Metabolic Care",
     description:
@@ -57,7 +57,7 @@ export const departmentData = [
   },
   {
     id: 4,
-    iconUrl: "images/departments/icon_2.svg",
+    iconUrl: "/images/departments/icon_2.svg",
     title: "Department of Nephrology",
     subTitle: "Advanced Kidney Care",
     description:
@@ -73,7 +73,7 @@ export const departmentData = [
   },
   {
     id: 5,
-    iconUrl: "images/departments/icon_3.svg",
+    iconUrl: "/images/departments/icon_3.svg",
     title: "Department of Oncology",
     subTitle: "Expert Cancer Care & Treatment",
     description:
@@ -87,7 +87,7 @@ export const departmentData = [
   },
   {
     id: 6,
-    iconUrl: "images/departments/icon_4.svg",
+    iconUrl: "/images/departments/icon_4.svg",
     title: "Department of Ophthalmology",
     subTitle: "Vision Care for All Ages",
     description:
@@ -104,7 +104,7 @@ export const departmentData = [
   },
   {
     id: 7,
-    iconUrl: "images/departments/icon_5.svg",
+    iconUrl: "/images/departments/icon_5.svg",
     title: "Department of Neuropsychiatry",
     subTitle: "Mental Health & Neurological Well-being",
     description:
@@ -119,7 +119,7 @@ export const departmentData = [
   },
   {
     id: 8,
-    iconUrl: "images/departments/icon_6.svg",
+    iconUrl: "/images/departments/icon_6.svg",
     title: "Department of Radiology",
     subTitle: "Advanced Imaging & Diagnostics",
     description:
@@ -134,7 +134,7 @@ export const departmentData = [
   },
   {
     id: 9,
-    iconUrl: "images/departments/icon_7.svg",
+    iconUrl: "/images/departments/icon_7.svg",
     title: "Department of Orthopedics",
     subTitle: "Comprehensive Bone & Joint Care",
     description:
@@ -150,7 +150,7 @@ export const departmentData = [
   },
   {
     id: 10,
-    iconUrl: "images/departments/icon_8.svg",
+    iconUrl: "/images/departments/icon_8.svg",
     title: "Department of Urology",
     subTitle: "Expert Care for Urinary & Reproductive Health",
     description:
@@ -165,7 +165,7 @@ export const departmentData = [
   },
   {
     id: 11,
-    iconUrl: "images/departments/icon_9.svg",
+    iconUrl: "/images/departments/icon_9.svg",
     title: "Department of Pulmonology",
     subTitle: "A Wide Range of Respiratory Care",
     description:
@@ -182,7 +182,7 @@ export const departmentData = [
   },
   {
     id: 12,
-    iconUrl: "images/departments/icon_10.svg",
+    iconUrl: "/images/departments/icon_10.svg",
     title: "Department of ENT (Ear, Nose & Throat)",
     subTitle: "Comprehensive ENT & Head-Neck Solutions",
     description:
@@ -198,7 +198,7 @@ export const departmentData = [
   },
   {
     id: 13,
-    iconUrl: "images/departments/icon_11.svg",
+    iconUrl: "/images/departments/icon_11.svg",
     title: "Department of Laboratory & Diagnostics",
     subTitle: "Accurate, Reliable & Timely Diagnostics",
     description:

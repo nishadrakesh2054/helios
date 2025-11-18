@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export default function Pagination() {
   return (
     <ul className="cs_pagination_box">
       <li>
         <button className="cs_pagination_arrow cs_center">
-          <img src="images/icons/left_arrow_blue.svg" alt="Icon" />
+          <img src="/images/icons/left_arrow_blue.svg" alt="Icon" />
         </button>
       </li>
       <li>
@@ -25,7 +25,7 @@ export default function Pagination() {
       </li>
       <li>
         <button className="cs_pagination_arrow cs_center">
-          <img src="images/icons/right_arrow_blue.svg" alt="Icon" />
+          <img src="/images/icons/right_arrow_blue.svg" alt="Icon" />
         </button>
       </li>
     </ul>
