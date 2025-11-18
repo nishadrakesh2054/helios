@@ -6,8 +6,8 @@ export default function Button({ btnUrl, btnText, variant }) {
     <Link to={btnUrl} className={`cs_btn cs_style_1 ${variant}`}>
       <span>{btnText}</span>
       <i>
-        <img src="/images/icons/arrow_white.svg" alt="Icon" />
-        <img src="/images/icons/arrow_white.svg" alt="Icon" />
+        <img src="/images/icons/arrow_whites.png" alt="Icon" />
+        <img src="/images/icons/arrow_whites.png" alt="Icon" />
       </i>
     </Link>
   );
