@@ -14,7 +14,7 @@ export default function WhyChooseUsSection({
       <Spacing md="72" lg="50" />
       <div className="row g-4">
         {data?.map((item, index) => (
-          <div className="col-lg-4 col-md-6" key={index}>
+          <div className="col-lg-4 col-md-6 " key={index}>
             <div
               className="cs_infographic_item"
               style={{
@@ -22,6 +22,7 @@ export default function WhyChooseUsSection({
                 padding: "30px 20px",
                 textAlign: "center",
                 transition: "all 0.4s ease",
+                boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.08)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-8px)";
