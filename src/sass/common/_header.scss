@@ -350,11 +350,11 @@
 
     .cs_nav_list {
       display: flex !important;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       height: inherit;
 
       > li {
-        margin-right: 50px;
+        margin-right: 35px;
         height: inherit;
 
         &:last-child {
@@ -367,7 +367,8 @@
           position: relative;
           height: inherit;
           align-items: center;
-          font-size: 17px;
+          font-size: 16px;
+          white-space: nowrap;
         }
 
         > ul {
@@ -532,6 +533,30 @@
 
   .cs_site_header_full_width .container {
     max-width: 100%;
+  }
+
+  // Optimize spacing for laptop screens
+  .cs_nav .cs_nav_list > li {
+    margin-right: 25px;
+
+    > a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  // Additional optimization for smaller laptop screens
+  .cs_nav .cs_nav_list > li {
+    margin-right: 20px;
+
+    > a {
+      font-size: 15px;
+    }
+  }
+
+  .cs_site-branding {
+    max-width: 160px;
   }
 }
 
