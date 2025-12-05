@@ -175,7 +175,7 @@ export default function Home() {
         bgUrl="/images/home_1/bg-2.png"
         imgUrl="/images/home_1/hero_img.png"
         videoBtnText="See Why Patients Trust Us"
-        videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
+        videoUrl="https://www.youtube.com/embed/3pPzvxwLM0k"
         infoList={[
           {
             title: "Call Us Now",
